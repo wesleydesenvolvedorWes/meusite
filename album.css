@@ -2,7 +2,7 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-bottom: 0;
-  border-color:#12d8d9;
+  background-color: #fff;
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -32,10 +32,7 @@ footer p {
   margin-bottom: .25rem;
 }
 
-
-.navbar-dark .navbar-brand {
-  color: #fff;
-}
-.navbar-dark .navbar-brand {
-  color: #fff;
+b, strong {
+  font-weight: bolder;
+  color: blue;
 }
