@@ -586,56 +586,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*----------------------------------------album de fotos --------------------------------------------------*/
 
-.jumbotron {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-bottom: 0;
-  background-color: #fff;
-}
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-}
-
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
-
-.jumbotron h1 {
-  font-weight: 300;
-}
-
-.jumbotron .container {
-  max-width: 40rem;
-}
-
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-footer p {
-  margin-bottom: .25rem;
-}
 
 /*------------Navebar------------------------------------------------------------------------------------------*/
 
 .navbar-dark .navbar-toggler {
-  color:#12d8d9;
-  border-color:#12d8d9;
+  color:black;
+  border-color:black;
+  color: black;
 }
 
 
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-  color: #3b63f6;
+  color: black;
+  color: black;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color:#3b63f6;
+  color:black;
+  color: black;
 }
 
 
@@ -720,3 +689,13 @@ footer p {
 .overflow-hidden { overflow: hidden;
  }
 
+
+
+ .navbar-toggler {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: blue;
+  border: 1px solid;
+  border-radius: .25rem;
+}
