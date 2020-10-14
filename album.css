@@ -45,3 +45,7 @@ b, strong {
   border: 1px solid;
   border-radius: .25rem;
 }
+
+.bg-dark {
+  background-color: #12d8d9!important;
+}
