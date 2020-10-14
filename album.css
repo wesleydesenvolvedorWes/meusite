@@ -36,3 +36,12 @@ b, strong {
   font-weight: bolder;
   color: blue;
 }
+
+.navbar-toggler {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: blue;
+  border: 1px solid;
+  border-radius: .25rem;
+}
