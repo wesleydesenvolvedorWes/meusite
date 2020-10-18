@@ -107,12 +107,12 @@ $(function () {
       $('.date').mask('11/11/1111');
       $('.time').mask('00:00:00');
       $('.date_time').mask('00/00/0000 00:00:00');
-      $('.cep').mask('00000-000');
-      $('.tel').mask('00 000-0000');
-      $('.cel').mask('00 0 0000-0000');
-      $('.mixed').mask('AAA 000-S0S');
+      $('.cep').mask('00000-000',{reverse: true});
+      $('.tel').mask('00 000-0000',{reverse: true});
+      $('.cel').mask('00 0 0000-0000',{reverse: true});
       $('.cpf').mask('000.000.000-00', {reverse: true});
       $('.money').mask('000.000.000.000.000,00', {reverse: true});
       $('.cc-numero').mask('0000 0000 0000 0000', {reverse: true});
+      $('.cc-cc-ccv').mask('00/00', {reverse: true});
     });
   
