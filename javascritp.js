@@ -112,6 +112,7 @@ $(function () {
       $('.cpf').mask('000.000.000-00', {reverse: true});
       $('.money').mask('000.000.000.000.000,00', {reverse: true});
       $('.cc-numero').mask('0000 0000 0000 0000', {reverse: true});
-      $('.cc-cc-ccv').mask('00 00', {reverse: true});
+      $('.cc-expiração').mask('00/00', {reverse: true});
+      $('.cc-ccv').mask('0000', {reverse: true});
     });
   
