@@ -19,7 +19,7 @@
    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
     <meta name="generator" content="Jekyll v4.1.1">
     
-    <title>Carousel Template · Bootstrap</title>
+    <title>Wesley-Desenvolvedor-Web</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
 
     <!-- Bootstrap core CSS -->
@@ -418,13 +418,35 @@
 <link href="form-validation.css" rel="stylesheet">
 <link href="estilo.css" rel="stylesheet">
 
+
+
+<!-- Injecting site-wide to the head -->
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+(function () {
+  var options = {
+      facebook: "100036754243412", // Facebook page ID
+      whatsapp: "+5511988574097", // WhatsApp number
+      call_to_action: "Falar com Wesley", // Call to action
+      button_color: "#129BF4", // Color of button
+      position: "right", // Position may be 'right' or 'left'
+      order: "whatsapp,facebook", // Order of buttons
+  };
+  var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+  s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+  var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+})();
+</script>
+
 </head>
 <body class="bg-light">
 <div class="container">
-<div class="py-3 text-center">
+<div class="py-5 text-center">
 <img src="wesley4.png"  alt="" width="170" height="170">
 <h2>Preencha o formulário</h2>
 </div>
+<form method="post" action="insert_into.asp" name="form" onsubmit="return valida_campo()">
 <div class="row">
 <div class="col-md-4 order-md-2 mb-4">
   <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -487,14 +509,14 @@
   <form class="needs-validation" novalidate>
     <div class="row">
       <div class="col-md-6 mb-3">
-        <label for="firstName">Nome:</label>
+        <label for="firstName">Nome</label>
         <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
         <div class="invalid-feedback">
           É necessário ter o nome válido.
         </div>
       </div>
       <div class="col-md-6 mb-3">
-        <label for="lastName">Sobrenome:</label>
+        <label for="lastName">Sobrenome</label>
         <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
         <div class="invalid-feedback">
           É necessário sobrenome válido.
@@ -518,6 +540,22 @@
       <input type="email" class="form-control" id="email" placeholder="Nome@exemplo.com">
       <div class="invalid-feedback">
         Por favor, insira um endereço de e-mail válido para atualizações de envio.
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for=".tel">Telefone <span class="text-muted">(Opicional)</span></label>
+        <input id=".tel" maxlength="9" class="form-control" type="tel" placeholder="00 0000 0000"data-mask="00 0000-0000" autocomplete="off" value="" data-mask-reverse="true">
+        <div class="invalid-feedback">
+          É necessário ter o telefone válido.
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for=".cel">Celular</span></label>
+        <input id=".cel" maxlength="12" class="form-control" type="tel" placeholder="" data-mask="00 0 0000-0000" autocomplete="off" value="" required="required" data-mask-reverse="true">
+        <div class="invalid-feedback">
+          É necessário ter o celular válido.
+        </div>
       </div>
     </div>
     <div class="mb-3">
@@ -576,11 +614,11 @@
       </div>
       <div class="col-md-4 mb-3">
         <label for="cep">Cep</label>
-        <input type="number" class="form-control" id="cep" placeholder="Ex:00000-000" required>
+        <input id="inputcep" maxlength="9" class="form-control" type="tel" placeholder="" data-mask="00000-000" autocomplete="off" value="" required="required" data-mask-reverse="true">
+
         <div class="invalid-feedback">
           CEP necessário.
         </div>
-
       </div>
     </div>
     <hr class="mb-4">
@@ -619,9 +657,12 @@
           Nome no cartão é necessário...
         </div>
       </div>
+
+
       <div class="col-md-6 mb-3">
         <label for="cc-numero">Número do cartão de crédito</label>
-        <input type="number" class="form-control" id="cc-numero" placeholder="" required>
+        <input id="cc-numero" maxlength="19" class="form-control" type="tel" placeholder="" data-mask="0000 0000 0000 0000" autocomplete="off" value="" required="required" data-mask-reverse="true">
+
         <div class="invalid-feedback">
           Número do cartão de crédito ...
           </div>
@@ -630,36 +671,30 @@
     <div class="row">
       <div class="col-md-3 mb-3">
         <label for="cc-expiração">Expiração</label>
-        <input type="number" class="form-control" id="cc-expiração" placeholder="" required>
+        <input id="cc-expiração" maxlength="5" class="form-control" type="tel" placeholder="" data-mask="00/00" autocomplete="off" value="" required="required" data-mask-reverse="true">
         <div class="invalid-feedback">
           Data de validade necessária
           </div>
       </div>
       <div class="col-md-3 mb-3">
         <label for="cc-cvv">CVV</label>
-        <input type="number" class="form-control" id="cc-cvv" placeholder="" required>
+        <input id="cc-ccv" maxlength="5" class="form-control" type="tel" placeholder="" data-mask="0000"  autocomplete="off" value="" required="required" data-mask-reverse="true">
         <div class="invalid-feedback">
           Código de segurança necessário
         </div>
       </div>
     </div>
+    <input type="file" class="form-control-fil" id="exampleFormControlFile1">
     <hr class="mb-4">
-    <button class="btn btn-primary btn-lg btn-block" type="submit">Entrar</button>
-  </form>
+  <button class="btn btn-primary btn-lg btn-block" id="btnEnviar" onclick="Enviar()"style="margin-left:-10px">
+    <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Enviar
+     </button>
+    </form>
 </div>
 </div>
 
 <footer class="my-5 pt-5 text-muted text-center text-small">
 
-<div class="card-body">
-<p class="mb-1"></p>
-<ul class="list-inline">
-  <li class="list-inline-item"><a href="#"></a></li>
-  <li class="list-inline-item"><a href="#"></a></li>
-  <li class="list-inline-item"><a href="#"></a></li>
-</ul>
-</footer>
-</div>
 <!---------------------------------------------Fim do formulario------------------------------------------------->
 
 
@@ -828,7 +863,7 @@
   <ul class="list-inline">
     <li class="list-inline-item"><a href="#">Privacidade</a></li>
     <li class="list-inline-item"><a href="#">Termos</a></li>
-    <li class="list-inline-item"><a href="mailto: wesleydesenvolvedorweb.mobile@hotmail.com">Apoio</a></li>
+    <li class="list-inline-item"><a href="mailto: wesleydesenvolvedorweb@gmail.com">Apoio</a></li>
   </ul>
  
 </div> 
