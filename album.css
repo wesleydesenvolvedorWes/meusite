@@ -49,3 +49,24 @@ b, strong {
 .bg-dark {
   background-color: #12d8d9!important;
 }
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: -500%;
+  right: -500%;
+  z-index: -1;
+  opacity: .5;
+  background-image: linear-gradient(-60deg,#FFFF 50%, #F0F8FF		 50%);
+}
+@keyframes slide{
+ 0% {
+transform: translateX(-25%);
+}
+ 100% {
+transform: translateX(25%);
+  }
+}
+
